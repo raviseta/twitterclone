@@ -1,0 +1,566 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC51C29129AF1E410011836F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC51C29029AF1E410011836F /* AppDelegate.swift */; };
+		AC51C29329AF1E410011836F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC51C29229AF1E410011836F /* SceneDelegate.swift */; };
+		AC51C29529AF1E410011836F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC51C29429AF1E410011836F /* ProfileViewController.swift */; };
+		AC51C29829AF1E410011836F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC51C29629AF1E410011836F /* Main.storyboard */; };
+		AC51C29A29AF1E430011836F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC51C29929AF1E430011836F /* Assets.xcassets */; };
+		AC51C29D29AF1E430011836F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC51C29B29AF1E430011836F /* LaunchScreen.storyboard */; };
+		AC51C2A629AF206E0011836F /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC51C2A429AF206E0011836F /* TweetCell.swift */; };
+		AC51C2A729AF206E0011836F /* TweetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC51C2A529AF206E0011836F /* TweetCell.xib */; };
+		AC51C2AA29AF38260011836F /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC51C2A929AF38260011836F /* NSObject+Extension.swift */; };
+		AC51C2AD29AF39380011836F /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC51C2AC29AF39380011836F /* ProfileViewModel.swift */; };
+		AC51C2AF29AF39C30011836F /* ServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC51C2AE29AF39C30011836F /* ServerResponse.swift */; };
+		AC51C2B229AF3AD70011836F /* ProfileDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC51C2B129AF3AD70011836F /* ProfileDataService.swift */; };
+		AC51C2B529AF3BDE0011836F /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC51C2B429AF3BDE0011836F /* AppConstants.swift */; };
+		AC51C2B829AF3CC40011836F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC51C2B729AF3CC40011836F /* NetworkManager.swift */; };
+		AC51C2BC29AF56E50011836F /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC51C2BB29AF56E50011836F /* APIError.swift */; };
+		AC51C2BF29AF59980011836F /* TweetCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC51C2BE29AF59980011836F /* TweetCellViewModel.swift */; };
+		AC51C2C229AF5FAA0011836F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC51C2C129AF5FAA0011836F /* BaseViewController.swift */; };
+		AC51C2C429AF67620011836F /* Tweet.json in Resources */ = {isa = PBXBuildFile; fileRef = AC51C2BA29AF40400011836F /* Tweet.json */; };
+		AC5B530529AFAECE00B8F073 /* MediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5B530329AFAECE00B8F073 /* MediaCell.swift */; };
+		AC5B530629AFAECE00B8F073 /* MediaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC5B530429AFAECE00B8F073 /* MediaCell.xib */; };
+		AC5B530929AFBBE000B8F073 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = AC5B530829AFBBE000B8F073 /* SDWebImage */; };
+		ACDFAB6729B095E6001AFB5E /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDFAB6629B095E6001AFB5E /* BaseTableViewCell.swift */; };
+		ACDFAB6B29B0972C001AFB5E /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDFAB6A29B0972C001AFB5E /* Alert.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AC51C28D29AF1E410011836F /* TwitterClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC51C29029AF1E410011836F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC51C29229AF1E410011836F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AC51C29429AF1E410011836F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		AC51C29729AF1E410011836F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC51C29929AF1E430011836F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC51C29C29AF1E430011836F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC51C29E29AF1E430011836F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC51C2A429AF206E0011836F /* TweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
+		AC51C2A529AF206E0011836F /* TweetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetCell.xib; sourceTree = "<group>"; };
+		AC51C2A929AF38260011836F /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
+		AC51C2AC29AF39380011836F /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		AC51C2AE29AF39C30011836F /* ServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponse.swift; sourceTree = "<group>"; };
+		AC51C2B129AF3AD70011836F /* ProfileDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataService.swift; sourceTree = "<group>"; };
+		AC51C2B429AF3BDE0011836F /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		AC51C2B729AF3CC40011836F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		AC51C2BA29AF40400011836F /* Tweet.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Tweet.json; sourceTree = "<group>"; };
+		AC51C2BB29AF56E50011836F /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		AC51C2BE29AF59980011836F /* TweetCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCellViewModel.swift; sourceTree = "<group>"; };
+		AC51C2C129AF5FAA0011836F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		AC5B530329AFAECE00B8F073 /* MediaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCell.swift; sourceTree = "<group>"; };
+		AC5B530429AFAECE00B8F073 /* MediaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MediaCell.xib; sourceTree = "<group>"; };
+		ACDFAB6629B095E6001AFB5E /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		ACDFAB6A29B0972C001AFB5E /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC51C28A29AF1E410011836F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC5B530929AFBBE000B8F073 /* SDWebImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC51C28429AF1E410011836F = {
+			isa = PBXGroup;
+			children = (
+				AC51C28F29AF1E410011836F /* TwitterClone */,
+				AC51C28E29AF1E410011836F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC51C28E29AF1E410011836F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC51C28D29AF1E410011836F /* TwitterClone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC51C28F29AF1E410011836F /* TwitterClone */ = {
+			isa = PBXGroup;
+			children = (
+				AC51C2C729AF68670011836F /* AppDelegate */,
+				AC51C2C029AF5E120011836F /* BaseViewController */,
+				AC51C2AB29AF39120011836F /* ProfileView */,
+				AC51C2B629AF3C440011836F /* NetworkLayer */,
+				AC51C2A829AF380E0011836F /* Extensions */,
+				AC51C2B329AF3BBB0011836F /* AppConstants */,
+				AC51C2B929AF40210011836F /* Resources */,
+				AC51C29629AF1E410011836F /* Main.storyboard */,
+				AC51C29929AF1E430011836F /* Assets.xcassets */,
+				AC51C29B29AF1E430011836F /* LaunchScreen.storyboard */,
+				AC51C29E29AF1E430011836F /* Info.plist */,
+			);
+			path = TwitterClone;
+			sourceTree = "<group>";
+		};
+		AC51C2A829AF380E0011836F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AC51C2A929AF38260011836F /* NSObject+Extension.swift */,
+				ACDFAB6A29B0972C001AFB5E /* Alert.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AC51C2AB29AF39120011836F /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				AC51C2C529AF68360011836F /* View */,
+				AC51C2B029AF3A9D0011836F /* Model */,
+				AC51C2BD29AF58C80011836F /* ViewModel */,
+				AC51C2C329AF65590011836F /* service */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
+		AC51C2B029AF3A9D0011836F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC51C2AE29AF39C30011836F /* ServerResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC51C2B329AF3BBB0011836F /* AppConstants */ = {
+			isa = PBXGroup;
+			children = (
+				AC51C2B429AF3BDE0011836F /* AppConstants.swift */,
+			);
+			path = AppConstants;
+			sourceTree = "<group>";
+		};
+		AC51C2B629AF3C440011836F /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				AC51C2B729AF3CC40011836F /* NetworkManager.swift */,
+				AC51C2BB29AF56E50011836F /* APIError.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		AC51C2B929AF40210011836F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AC51C2BA29AF40400011836F /* Tweet.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AC51C2BD29AF58C80011836F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AC51C2AC29AF39380011836F /* ProfileViewModel.swift */,
+				AC51C2BE29AF59980011836F /* TweetCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AC51C2C029AF5E120011836F /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AC51C2C129AF5FAA0011836F /* BaseViewController.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		AC51C2C329AF65590011836F /* service */ = {
+			isa = PBXGroup;
+			children = (
+				AC51C2B129AF3AD70011836F /* ProfileDataService.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		AC51C2C529AF68360011836F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC51C2C629AF684A0011836F /* Cell */,
+				AC51C29429AF1E410011836F /* ProfileViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC51C2C629AF684A0011836F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				ACDFAB6629B095E6001AFB5E /* BaseTableViewCell.swift */,
+				ACDFAB6829B095EC001AFB5E /* TweetCell */,
+				ACDFAB6929B095F9001AFB5E /* MediaCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		AC51C2C729AF68670011836F /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				AC51C29029AF1E410011836F /* AppDelegate.swift */,
+				AC51C29229AF1E410011836F /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		ACDFAB6829B095EC001AFB5E /* TweetCell */ = {
+			isa = PBXGroup;
+			children = (
+				AC51C2A429AF206E0011836F /* TweetCell.swift */,
+				AC51C2A529AF206E0011836F /* TweetCell.xib */,
+			);
+			path = TweetCell;
+			sourceTree = "<group>";
+		};
+		ACDFAB6929B095F9001AFB5E /* MediaCell */ = {
+			isa = PBXGroup;
+			children = (
+				AC5B530329AFAECE00B8F073 /* MediaCell.swift */,
+				AC5B530429AFAECE00B8F073 /* MediaCell.xib */,
+			);
+			path = MediaCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC51C28C29AF1E410011836F /* TwitterClone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC51C2A129AF1E430011836F /* Build configuration list for PBXNativeTarget "TwitterClone" */;
+			buildPhases = (
+				AC51C28929AF1E410011836F /* Sources */,
+				AC51C28A29AF1E410011836F /* Frameworks */,
+				AC51C28B29AF1E410011836F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TwitterClone;
+			packageProductDependencies = (
+				AC5B530829AFBBE000B8F073 /* SDWebImage */,
+			);
+			productName = TwitterClone;
+			productReference = AC51C28D29AF1E410011836F /* TwitterClone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC51C28529AF1E410011836F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					AC51C28C29AF1E410011836F = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = AC51C28829AF1E410011836F /* Build configuration list for PBXProject "TwitterClone" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC51C28429AF1E410011836F;
+			packageReferences = (
+				AC5B530729AFBBE000B8F073 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
+			productRefGroup = AC51C28E29AF1E410011836F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC51C28C29AF1E410011836F /* TwitterClone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC51C28B29AF1E410011836F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC51C29D29AF1E430011836F /* LaunchScreen.storyboard in Resources */,
+				AC51C29A29AF1E430011836F /* Assets.xcassets in Resources */,
+				AC51C29829AF1E410011836F /* Main.storyboard in Resources */,
+				AC5B530629AFAECE00B8F073 /* MediaCell.xib in Resources */,
+				AC51C2C429AF67620011836F /* Tweet.json in Resources */,
+				AC51C2A729AF206E0011836F /* TweetCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC51C28929AF1E410011836F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC51C2C229AF5FAA0011836F /* BaseViewController.swift in Sources */,
+				AC51C2BF29AF59980011836F /* TweetCellViewModel.swift in Sources */,
+				AC51C2AD29AF39380011836F /* ProfileViewModel.swift in Sources */,
+				AC51C2B529AF3BDE0011836F /* AppConstants.swift in Sources */,
+				AC51C2B829AF3CC40011836F /* NetworkManager.swift in Sources */,
+				AC5B530529AFAECE00B8F073 /* MediaCell.swift in Sources */,
+				AC51C2AA29AF38260011836F /* NSObject+Extension.swift in Sources */,
+				AC51C29529AF1E410011836F /* ProfileViewController.swift in Sources */,
+				AC51C2AF29AF39C30011836F /* ServerResponse.swift in Sources */,
+				AC51C29129AF1E410011836F /* AppDelegate.swift in Sources */,
+				AC51C29329AF1E410011836F /* SceneDelegate.swift in Sources */,
+				AC51C2A629AF206E0011836F /* TweetCell.swift in Sources */,
+				AC51C2B229AF3AD70011836F /* ProfileDataService.swift in Sources */,
+				ACDFAB6729B095E6001AFB5E /* BaseTableViewCell.swift in Sources */,
+				ACDFAB6B29B0972C001AFB5E /* Alert.swift in Sources */,
+				AC51C2BC29AF56E50011836F /* APIError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AC51C29629AF1E410011836F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC51C29729AF1E410011836F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC51C29B29AF1E430011836F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC51C29C29AF1E430011836F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC51C29F29AF1E430011836F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC51C2A029AF1E430011836F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC51C2A229AF1E430011836F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TwitterClone/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raviseta.TwitterClone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC51C2A329AF1E430011836F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TwitterClone/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raviseta.TwitterClone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC51C28829AF1E410011836F /* Build configuration list for PBXProject "TwitterClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC51C29F29AF1E430011836F /* Debug */,
+				AC51C2A029AF1E430011836F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC51C2A129AF1E430011836F /* Build configuration list for PBXNativeTarget "TwitterClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC51C2A229AF1E430011836F /* Debug */,
+				AC51C2A329AF1E430011836F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AC5B530729AFBBE000B8F073 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AC5B530829AFBBE000B8F073 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC5B530729AFBBE000B8F073 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AC51C28529AF1E410011836F /* Project object */;
+}
