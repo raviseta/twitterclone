@@ -26,5 +26,3 @@
 
 - UITest cases using XCUITest.
 - Unit tests using XCTest.
-- Reduce API calls.
-
