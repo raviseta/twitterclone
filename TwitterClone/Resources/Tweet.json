@@ -25,6 +25,15 @@
             "isMedia": true,
             "url": "https://picsum.photos/200/300",
             "reTweets": 55
+        },
+        {
+            "tweet": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "comments": 22,
+            "likes": 33,
+            "activity": 44,
+            "isMedia": true,
+            "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+            "reTweets": 55
         }
     ]
 }
