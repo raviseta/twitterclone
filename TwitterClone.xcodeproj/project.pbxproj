@@ -15,7 +15,6 @@
 		AC51C29D29AF1E430011836F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC51C29B29AF1E430011836F /* LaunchScreen.storyboard */; };
 		AC51C2A629AF206E0011836F /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC51C2A429AF206E0011836F /* TweetCell.swift */; };
 		AC51C2A729AF206E0011836F /* TweetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC51C2A529AF206E0011836F /* TweetCell.xib */; };
-		AC51C2AA29AF38260011836F /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC51C2A929AF38260011836F /* NSObject+Extension.swift */; };
 		AC51C2AD29AF39380011836F /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC51C2AC29AF39380011836F /* ProfileViewModel.swift */; };
 		AC51C2AF29AF39C30011836F /* ServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC51C2AE29AF39C30011836F /* ServerResponse.swift */; };
 		AC51C2B229AF3AD70011836F /* ProfileDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC51C2B129AF3AD70011836F /* ProfileDataService.swift */; };
@@ -30,6 +29,7 @@
 		AC5B530929AFBBE000B8F073 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = AC5B530829AFBBE000B8F073 /* SDWebImage */; };
 		ACDFAB6729B095E6001AFB5E /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDFAB6629B095E6001AFB5E /* BaseTableViewCell.swift */; };
 		ACDFAB6B29B0972C001AFB5E /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDFAB6A29B0972C001AFB5E /* Alert.swift */; };
+		ACDFAB6D29B0B3BA001AFB5E /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDFAB6C29B0B3BA001AFB5E /* UIDevice+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +43,6 @@
 		AC51C29E29AF1E430011836F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC51C2A429AF206E0011836F /* TweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
 		AC51C2A529AF206E0011836F /* TweetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetCell.xib; sourceTree = "<group>"; };
-		AC51C2A929AF38260011836F /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		AC51C2AC29AF39380011836F /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		AC51C2AE29AF39C30011836F /* ServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponse.swift; sourceTree = "<group>"; };
 		AC51C2B129AF3AD70011836F /* ProfileDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataService.swift; sourceTree = "<group>"; };
@@ -57,6 +56,7 @@
 		AC5B530429AFAECE00B8F073 /* MediaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MediaCell.xib; sourceTree = "<group>"; };
 		ACDFAB6629B095E6001AFB5E /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		ACDFAB6A29B0972C001AFB5E /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		ACDFAB6C29B0B3BA001AFB5E /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +108,8 @@
 		AC51C2A829AF380E0011836F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				AC51C2A929AF38260011836F /* NSObject+Extension.swift */,
 				ACDFAB6A29B0972C001AFB5E /* Alert.swift */,
+				ACDFAB6C29B0B3BA001AFB5E /* UIDevice+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -315,10 +315,10 @@
 				AC51C2B529AF3BDE0011836F /* AppConstants.swift in Sources */,
 				AC51C2B829AF3CC40011836F /* NetworkManager.swift in Sources */,
 				AC5B530529AFAECE00B8F073 /* MediaCell.swift in Sources */,
-				AC51C2AA29AF38260011836F /* NSObject+Extension.swift in Sources */,
 				AC51C29529AF1E410011836F /* ProfileViewController.swift in Sources */,
 				AC51C2AF29AF39C30011836F /* ServerResponse.swift in Sources */,
 				AC51C29129AF1E410011836F /* AppDelegate.swift in Sources */,
+				ACDFAB6D29B0B3BA001AFB5E /* UIDevice+Extension.swift in Sources */,
 				AC51C29329AF1E410011836F /* SceneDelegate.swift in Sources */,
 				AC51C2A629AF206E0011836F /* TweetCell.swift in Sources */,
 				AC51C2B229AF3AD70011836F /* ProfileDataService.swift in Sources */,

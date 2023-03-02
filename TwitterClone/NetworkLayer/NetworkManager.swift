@@ -12,7 +12,7 @@ protocol NetworkManagerProtocol {
 }
 
 class NetworkManager: NetworkManagerProtocol {
-   
+    
     func initiateServiceRequest(url: URL) async throws -> Data {
         
         guard  let path = Bundle.main.path(forResource: "Tweet", ofType: "json")

@@ -29,7 +29,7 @@ struct Constants {
         static let tableRowEstimatedHeight = 182.0
         static let SCREEN_WIDTH: CGFloat = UIScreen.main.bounds.width
     }
-  
+    
     struct ErrorMessages {
         static let xibNotFound = "xib does not exists"
         static let invalidURL = "Invalid URL"

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 protocol ProfileViewModelProtocol: AnyObject {
     var reloadTableView: (() -> Void)? { get  set}
     var tweetArray: [Tweet] { get }
@@ -21,7 +22,7 @@ final class ProfileViewModel: ProfileViewModelProtocol {
     private var tweetDataService: TweetDataServiceProtocol
     var tweetArray = [Tweet]()
     var showAPIError: ((Error) -> Void)?
-
+    
     var tweetCellViewModels = [TweetCellViewModel]() {
         didSet {
             reloadTableView?()

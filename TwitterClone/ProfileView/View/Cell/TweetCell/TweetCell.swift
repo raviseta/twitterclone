@@ -22,13 +22,13 @@ class TweetCell: BaseTableViewCell {
     @IBOutlet weak var btnShare: UIButton!
     @IBOutlet weak var btnActivity: UIButton!
     @IBOutlet weak var btnReTweet: UIButton!
-
+    
     var cellViewModel: TweetCellViewModel?
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }

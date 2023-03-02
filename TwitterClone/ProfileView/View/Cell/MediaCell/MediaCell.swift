@@ -16,11 +16,11 @@ class MediaCell: BaseTableViewCell {
     @IBOutlet weak var lblUsername: UILabel!
     @IBOutlet weak var ivProfile: UIImageView!
     var cellViewModel: TweetCellViewModel?
-   
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
@@ -32,8 +32,8 @@ extension MediaCell: TweetCellAppearanceProtocol {
         if let imageURL = URL(string: cellViewModel.url) {
             self.ivTweetImage.contentMode = .scaleAspectFill
             self.ivTweetImage.sd_setImage(with: imageURL,
-                                    placeholderImage: UIImage(named: Constants.Image.placeholderImage),
-                                    options: .transformAnimatedImage, context: nil)
+                                          placeholderImage: UIImage(named: Constants.Image.placeholderImage),
+                                          options: .transformAnimatedImage, context: nil)
         }
     }
 }
